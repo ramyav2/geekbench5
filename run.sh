@@ -116,9 +116,6 @@ for instructions.
                             information)
                             
 --verbose                   Show verbose output
-
---x32                       Run in 32 bit mode (geekbench_x86_32) - defaults 
-                            to 64 bit (geekbench_x86_64)
                             
                             
 DEPENDENCIES

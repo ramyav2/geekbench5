@@ -12,6 +12,9 @@ finally enter your registration key - e.g.
 
 Geekbench-5.0.4-Linux/geekbench_x86_64 -r [email] [registration key]
 
+NOTE: When cloning this repository, please use the --recurse-submodules option
+to also pull the https://github.com/cloudharmony/benchmark submodule.
+
 
 TESTING PARAMETERS
 Test behavior is fixed, but you may specify the following optional meta 
@@ -100,9 +103,6 @@ for instructions.
                             information)
                             
 * verbose                   Show verbose output
-
-* x32                       Run in 32 bit mode (geekbench_x86_32) - defaults 
-                            to 64 bit (geekbench_x86_64)
                             
                             
 DEPENDENCIES

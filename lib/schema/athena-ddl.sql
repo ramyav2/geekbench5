@@ -9,8 +9,6 @@ CREATE EXTERNAL TABLE IF NOT EXISTS [your database].geekbench_5 (
   integer_multicore_score INT,
   integer_score INT,
   iteration TINYINT,
-  memory_multicore_score INT,
-  memory_score INT,
   meta_burst TINYINT,
   meta_compute_service VARCHAR(32),
   meta_compute_service_id VARCHAR(24),

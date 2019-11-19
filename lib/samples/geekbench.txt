@@ -1,0 +1,118 @@
+System Information
+  Operating System              Linux 4.14.138-89.102.amzn1.x86_64 x86_64
+  Model                         Amazon EC2 c5d.xlarge
+  Motherboard                   Amazon EC2
+  BIOS                          Amazon EC2 1.0
+
+Processor Information
+  Name                          Intel(R) Xeon(R)
+  Topology                      1 Processor, 2 Cores, 4 Threads
+  Identifier                    GenuineIntel Family 6 Model 85 Stepping 4
+  Base Frequency                3.40 GHz
+  L1 Instruction Cache          32.0 KB x 2
+  L1 Data Cache                 32.0 KB x 2
+  L2 Cache                      1.00 MB x 2
+  L3 Cache                      24.8 MB
+
+Memory Information
+  Size                          7.45 GB
+
+
+Single-Core Performance
+               AES-XTS
+              1268 |||||||||||||||
+      Text Compression
+               897 ||||||||||
+     Image Compression
+               898 ||||||||||
+            Navigation
+               795 |||||||||
+                 HTML5
+               891 ||||||||||
+                SQLite
+               892 ||||||||||
+         PDF Rendering
+               885 ||||||||||
+        Text Rendering
+               826 ||||||||||
+                 Clang
+               947 |||||||||||
+                Camera
+               918 |||||||||||
+        N-Body Physics
+               877 ||||||||||
+    Rigid Body Physics
+               955 |||||||||||
+         Gaussian Blur
+               651 |||||||
+        Face Detection
+               920 |||||||||||
+     Horizon Detection
+               842 ||||||||||
+      Image Inpainting
+               885 ||||||||||
+                   HDR
+               908 |||||||||||
+           Ray Tracing
+              1233 |||||||||||||||
+  Structure from Motion
+               876 ||||||||||
+    Speech Recognition
+               840 ||||||||||
+      Machine Learning
+               676 ||||||||
+
+Multi-Core Performance
+               AES-XTS
+              2805 ||||||||||||||||||||||||||||||||||
+      Text Compression
+              2425 |||||||||||||||||||||||||||||
+     Image Compression
+              2104 |||||||||||||||||||||||||
+            Navigation
+              2131 ||||||||||||||||||||||||||
+                 HTML5
+              1809 ||||||||||||||||||||||
+                SQLite
+              1933 |||||||||||||||||||||||
+         PDF Rendering
+              2176 ||||||||||||||||||||||||||
+        Text Rendering
+              1710 ||||||||||||||||||||
+                 Clang
+              2266 |||||||||||||||||||||||||||
+                Camera
+              1947 |||||||||||||||||||||||
+        N-Body Physics
+              2251 |||||||||||||||||||||||||||
+    Rigid Body Physics
+              2712 |||||||||||||||||||||||||||||||||
+         Gaussian Blur
+              1775 |||||||||||||||||||||
+        Face Detection
+              2207 |||||||||||||||||||||||||||
+     Horizon Detection
+              2110 |||||||||||||||||||||||||
+      Image Inpainting
+              2273 |||||||||||||||||||||||||||
+                   HDR
+              2279 |||||||||||||||||||||||||||
+           Ray Tracing
+              3266 ||||||||||||||||||||||||||||||||||||||||
+  Structure from Motion
+              1934 |||||||||||||||||||||||
+    Speech Recognition
+              2183 ||||||||||||||||||||||||||
+      Machine Learning
+              1600 |||||||||||||||||||
+
+Benchmark Summary
+  Single-Core Score              897
+    Crypto Score                  1268
+    Integer Score                  882
+    Floating Point Score           867
+  Multi-Core Score              2129
+    Crypto Score                  2805
+    Integer Score                 2045
+    Floating Point Score          2197
+

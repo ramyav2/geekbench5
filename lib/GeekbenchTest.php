@@ -149,8 +149,7 @@ class GeekbenchTest {
           'meta_test_id:',
           'output:',
           'upload',
-          'v' => 'verbose',
-          'x32'
+          'v' => 'verbose'
         );
         $this->options = parse_args($opts); 
         foreach($defaults as $key => $val) {
@@ -183,7 +182,7 @@ class GeekbenchTest {
     $ofile = sprintf('%s/%s', $this->options['output'], self::GEEKBENCH_TEST_FILE_NAME);
     $efile = sprintf('%s/%s', $this->options['output'], self::GEEKBENCH_TEST_ERR_FILE);
     $xfile = sprintf('%s/%s', $this->options['output'], self::GEEKBENCH_TEST_EXIT_FILE);
-    $cmd = sprintf('cd %s;%s/geekbench_x86_%d --export-html geekbench.html --export-json geekbench.json --export-text geekbench.txt --%supload | tee %s 2>%s;echo $? > %s', $this->options['output'], $this->options['geekbench_dir'], isset($this->options['x32']) ? 32 : 64, isset($this->options['upload']) ? '' : 'no-', $ofile, $efile, $xfile);
+    $cmd = sprintf('cd %s;%s/geekbench_x86_64 --export-html geekbench.html --export-json geekbench.json --export-text geekbench.txt --%supload | tee %s 2>%s;echo $? > %s', $this->options['output'], $this->options['geekbench_dir'], isset($this->options['upload']) ? '' : 'no-', $ofile, $efile, $xfile);
     
     passthru($cmd);
     $ecode = trim(file_get_contents($xfile));
@@ -245,7 +244,7 @@ class GeekbenchTest {
       if (!file_exists($run = sprintf('%s/geekbench_x86_64', $this->options['geekbench_dir'])) || !is_executable($run)) $validated['geekbench_dir'] = '--geekbench_dir ' . $this->options['geekbench_dir'] . ' does not contain geekbench_x86_64';
       else {
         // check if Geekbench is registered
-        $sysinfo = shell_exec(sprintf('%s/geekbench_x86_%d --sysinfo 2>/dev/null', $this->options['geekbench_dir'], isset($this->options['x32']) ? 32 : 64));
+        $sysinfo = shell_exec(sprintf('%s/geekbench_x86_64 --sysinfo 2>/dev/null', $this->options['geekbench_dir']));
         if (strpos($sysinfo, 'Processor')) print_msg(sprintf('Geekbench directory %s is valid and registered', $this->options['geekbench_dir']), isset($this->options['verbose']), __FILE__, __LINE__);
         else $validated['geekbench_dir'] = sprintf('Geekbench has not been registered [ecode=%d; user=%s]. Register using %s/geekbench_x86_64 -r [email] [registration key]', $ecode, trim(shell_exec('whoami')), $this->options['geekbench_dir']);
       }

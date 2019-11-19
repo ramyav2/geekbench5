@@ -9,8 +9,6 @@
   {"name": "integer_multicore_score", "type": "int unsigned"},
   {"name": "integer_score", "type": "int unsigned"},
   {"name": "iteration", "type": "tinyint unsigned"},
-  {"name": "memory_multicore_score", "type": "int unsigned"},
-  {"name": "memory_score", "type": "int unsigned"},
   {"name": "meta_burst", "type": "boolean"},
   {"name": "meta_compute_service", "type": "char(32)"},
   {"name": "meta_compute_service_id", "type": "char(24)"},

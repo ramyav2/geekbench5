@@ -1,77 +1,80 @@
-Geekbench 4.0.1 Pro : http://www.geekbench.com/
+Geekbench 5.0.4 Pro : https://www.geekbench.com/
 
 System Information
-  Operating System        Ubuntu 14.04.2 LTS 3.13.0-48-generic x86_64
-  Model                   Xen HVM domU
-  Motherboard             N/A
-  Processor               Intel Xeon E5-2670 v2 @ 2.50 GHz
-                          1 Processor, 2 Threads
-  Processor ID            GenuineIntel Family 6 Model 62 Stepping 4
-  L1 Instruction Cache    32.0 KB
-  L1 Data Cache           32.0 KB
-  L2 Cache                256 KB
-  L3 Cache                25.0 MB
-  Memory                  14.9 GB 
-  BIOS                    Xen 4.2.amazon
-  Compiler                Clang 3.8.0 (tags/RELEASE_380/final)
+  Operating System              Linux 4.14.138-89.102.amzn1.x86_64 x86_64
+  Model                         Amazon EC2 c5d.xlarge
+  Motherboard                   Amazon EC2
+  BIOS                          Amazon EC2 1.0
+
+Processor Information
+  Name                          Intel(R) Xeon(R)
+  Topology                      1 Processor, 2 Cores, 4 Threads
+  Identifier                    GenuineIntel Family 6 Model 85 Stepping 4
+  Base Frequency                3.46 GHz
+  L1 Instruction Cache          32.0 KB x 2
+  L1 Data Cache                 32.0 KB x 2
+  L2 Cache                      1.00 MB x 2
+  L3 Cache                      24.8 MB
+
+Memory Information
+  Size                          7.45 GB
+
 
 Single-Core
-  AES                           2645              1.99 GB/sec
-  LZMA                          3179              4.97 MB/sec
-  JPEG                          3344         26.9 Mpixels/sec
-  Canny                         2992         41.5 Mpixels/sec
-  Lua                           2436              2.50 MB/sec
-  Dijkstra                      4440             3.00 MTE/sec
-  SQLite                        2855           79.2 Krows/sec
-  HTML5 Parse                   2718              12.3 MB/sec
-  HTML5 DOM                     2482       2.25 MElements/sec
-  Histogram Equalization        2713         84.8 Mpixels/sec
-  PDF Rendering                 3289         87.4 Mpixels/sec
-  LLVM                          3690      253.7 functions/sec
-  Camera                        3020          8.37 images/sec
-  SGEMM                         1637              34.6 Gflops
-  SFFT                          3325              8.29 Gflops
-  N-Body Physics                2758          2.06 Mpairs/sec
-  Ray Tracing                   2539        370.8 Kpixels/sec
-  Rigid Body Physics            3387               9915.3 FPS
-  HDR                           3205         11.6 Mpixels/sec
-  Gaussian Blur                 3004         52.6 Mpixels/sec
-  Speech Recognition            3717           31.8 Words/sec
-  Face Detection                2906    848.8 Ksubwindows/sec
-  Memory Copy                   2194              6.08 GB/sec
-  Memory Latency                5401     12.5 Moperations/sec
-  Memory Bandwidth              1139              6.09 GB/sec
+  AES-XTS                        1271              2.17 GB/sec
+  Text Compression                880              4.45 MB/sec
+  Image Compression               898         42.5 Mpixels/sec
+  Navigation                      829             2.34 MTE/sec
+  HTML5                           888       1.04 MElements/sec
+  SQLite                          895          280.3 Krows/sec
+  PDF Rendering                   887         48.1 Mpixels/sec
+  Text Rendering                  828             263.7 KB/sec
+  Clang                           949          7.40 Klines/sec
+  Camera                          925          10.7 images/sec
+  N-Body Physics                  883          1.10 Mpairs/sec
+  Rigid Body Physics              954               5911.1 FPS
+  Gaussian Blur                   655         36.0 Mpixels/sec
+  Face Detection                  919          7.08 images/sec
+  Horizon Detection               845         20.8 Mpixels/sec
+  Image Inpainting                895         43.9 Mpixels/sec
+  HDR                             911         12.4 Mpixels/sec
+  Ray Tracing                    1234        991.0 Kpixels/sec
+  Structure from Motion           876         7.85 Kpixels/sec
+  Speech Recognition              868           27.8 Words/sec
+  Machine Learning                690          26.7 images/sec
 
 Multi-Core
-  AES                           2772              2.09 GB/sec
-  LZMA                          4001              6.25 MB/sec
-  JPEG                          4278         34.4 Mpixels/sec
-  Canny                         3932         54.5 Mpixels/sec
-  Lua                           3115              3.20 MB/sec
-  Dijkstra                      5736             3.88 MTE/sec
-  SQLite                        3259           90.4 Krows/sec
-  HTML5 Parse                   3174              14.4 MB/sec
-  HTML5 DOM                     3652       3.31 MElements/sec
-  Histogram Equalization        3114         97.3 Mpixels/sec
-  PDF Rendering                 4116        109.4 Mpixels/sec
-  LLVM                          4496      309.2 functions/sec
-  Camera                        3779          10.5 images/sec
-  SGEMM                         1641              34.7 Gflops
-  SFFT                          3445              8.59 Gflops
-  N-Body Physics                3203          2.39 Mpairs/sec
-  Ray Tracing                   3192        466.2 Kpixels/sec
-  Rigid Body Physics            4432              12974.4 FPS
-  HDR                           4150         15.0 Mpixels/sec
-  Gaussian Blur                 3026         53.0 Mpixels/sec
-  Speech Recognition            5178           44.3 Words/sec
-  Face Detection                3378    986.9 Ksubwindows/sec
-  Memory Copy                   2943              8.15 GB/sec
-  Memory Latency                5382     12.4 Moperations/sec
-  Memory Bandwidth              1369              7.31 GB/sec
+  AES-XTS                        2800              4.77 GB/sec
+  Text Compression               2388              12.1 MB/sec
+  Image Compression              2113         99.9 Mpixels/sec
+  Navigation                     2146             6.05 MTE/sec
+  HTML5                          1808       2.12 MElements/sec
+  SQLite                         1944          609.2 Krows/sec
+  PDF Rendering                  2173        117.9 Mpixels/sec
+  Text Rendering                 1695             540.2 KB/sec
+  Clang                          2259          17.6 Klines/sec
+  Camera                         1958          22.7 images/sec
+  N-Body Physics                 2249          2.81 Mpairs/sec
+  Rigid Body Physics             2712              16803.5 FPS
+  Gaussian Blur                  1781         97.9 Mpixels/sec
+  Face Detection                 2197          16.9 images/sec
+  Horizon Detection              2106         51.9 Mpixels/sec
+  Image Inpainting               2272        111.4 Mpixels/sec
+  HDR                            2279         31.1 Mpixels/sec
+  Ray Tracing                    3259         2.62 Mpixels/sec
+  Structure from Motion          1931         17.3 Kpixels/sec
+  Speech Recognition             2190           70.0 Words/sec
+  Machine Learning               1581          61.1 images/sec
 
 Benchmark Summary
-  Single-Core Score             2845
-  Multi-Core Score              3412
+  Single-Core Score              902
+    Crypto Score                  1271
+    Integer Score                  886
+    Floating Point Score           874
+  Multi-Core Score              2126
+    Crypto Score                  2800
+    Integer Score                 2043
+    Floating Point Score          2194
 
 
 Uploading results to the Geekbench Browser. This could take a minute or two 
@@ -79,8 +82,8 @@ depending on the speed of your internet connection.
 
 Upload succeeded. Visit the following link and view your results online:
 
-  https://browser.geekbench.com/v4/cpu/736326
+  https://browser.geekbench.com/v5/cpu/623935
 
 Visit the following link and add this result to your profile:
 
-  https://browser.geekbench.com/v4/cpu/736326/claim?key=848793
+  https://browser.geekbench.com/v5/cpu/623935/claim?key=643968

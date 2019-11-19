@@ -26,7 +26,7 @@ if (isset($argv[1]) && file_exists($argv[1]) && file_exists($json = dirname($arg
         foreach($val as $option => $value) printf("option_%s=%s\n", $option, trim($value));
       }
       else if ($key == 'metrics' && is_array($val)) {
-        foreach($val as $property) if (isset($property['name']) && isset($property['value']) && trim($property['value'])) printf("meta_%s=%s\n", str_replace('-', '_', str_replace(' ', '_', trim(strtolower($property['name'])))), trim($property['value']));
+        foreach($val as $property) if (isset($property['name']) && isset($property['value']) && trim($property['value'])) printf("meta_%s=%s\n", str_replace('-', '_', str_replace(' ', '_', trim(strtolower($property['name'] == 'Size' ? 'memory' : $property['name'])))), trim($property['value']));
       }
       else if ($key == 'sections' && is_array($val)) {
         foreach($val as $section) {
