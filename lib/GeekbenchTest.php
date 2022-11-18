@@ -121,7 +121,7 @@ class GeekbenchTest {
         $defaults = array(
           'collectd_rrd_dir' => '/var/lib/collectd/rrd',
           'meta_compute_service' => 'Not Specified',
-          'meta_cpu' => $sysInfo['cpu'],
+          //'meta_cpu' => $sysInfo['cpu'],
           'meta_instance_id' => 'Not Specified',
           'meta_memory' => $sysInfo['memory_gb'] > 0 ? $sysInfo['memory_gb'] . ' GB' : $sysInfo['memory_mb'] . ' MB',
           'meta_os' => $sysInfo['os_info'],
@@ -136,7 +136,7 @@ class GeekbenchTest {
           'meta_burst:',
           'meta_compute_service:',
           'meta_compute_service_id:',
-          'meta_cpu:',
+         // 'meta_cpu:',
           'meta_instance_id:',
           'meta_memory:',
           'meta_os:',
